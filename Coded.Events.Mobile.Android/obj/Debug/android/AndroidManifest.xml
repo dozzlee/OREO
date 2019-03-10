@@ -5,7 +5,7 @@
   <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
   <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
   <application android:label="Coded.Events.Mobile.Android" android:name="android.app.Application" android:allowBackup="true" android:icon="@mipmap/icon" android:debuggable="true">
-    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="CodedTicketingApp" android:theme="@style/MainTheme" android:name="md5b343bcfe252295190c4bf5c66f0fbd04.MainActivity">
+    <activity android:configChanges="orientation|screenSize" android:icon="@mipmap/icon" android:label="Coded.Events.Mobile" android:theme="@style/MainTheme" android:name="md5a59d68718218f674456a3b67a89ebe95.MainActivity">
       <intent-filter>
         <action android:name="android.intent.action.MAIN" />
         <category android:name="android.intent.category.LAUNCHER" />

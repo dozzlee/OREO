@@ -105,8 +105,9 @@ public class MonoPackageManager {
 
 class MonoPackageManager_Resources {
 	public static final String[] Assemblies = new String[]{
-		/* We need to ensure that "CodedTicketingApp.Android.dll" comes first in this list. */
-		"CodedTicketingApp.Android.dll",
+		/* We need to ensure that "Coded.Events.Mobile.Android.dll" comes first in this list. */
+		"Coded.Events.Mobile.Android.dll",
+		"Coded.Events.Mobile.dll",
 		"FormsViewGroup.dll",
 		"Xamarin.Android.Arch.Core.Common.dll",
 		"Xamarin.Android.Arch.Lifecycle.Common.dll",
@@ -131,7 +132,6 @@ class MonoPackageManager_Resources {
 		"Xamarin.Forms.Platform.Android.dll",
 		"Xamarin.Forms.Platform.dll",
 		"Xamarin.Forms.Xaml.dll",
-		"CodedTicketingApp.dll",
 	};
 	public static final String[] Dependencies = new String[]{
 	};
