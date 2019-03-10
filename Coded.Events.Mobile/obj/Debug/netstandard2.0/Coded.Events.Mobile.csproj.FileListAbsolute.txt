@@ -1,0 +1,13 @@
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/bin/Debug/netstandard2.0/Coded.Events.Mobile.deps.json
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/bin/Debug/netstandard2.0/Coded.Events.Mobile.dll
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/bin/Debug/netstandard2.0/Coded.Events.Mobile.pdb
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/obj/Debug/netstandard2.0/Coded.Events.Mobile.csprojAssemblyReference.cache
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/obj/Debug/netstandard2.0/App.xaml.g.cs
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/obj/Debug/netstandard2.0/MainPage.xaml.g.cs
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/obj/Debug/netstandard2.0/Views/LoginPage.xaml.g.cs
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/obj/Debug/netstandard2.0/Coded.Events.Mobile.csproj.CoreCompileInputs.cache
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/obj/Debug/netstandard2.0/Coded.Events.Mobile.AssemblyInfoInputs.cache
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/obj/Debug/netstandard2.0/Coded.Events.Mobile.AssemblyInfo.cs
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/obj/Debug/netstandard2.0/XamlC.stamp
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/obj/Debug/netstandard2.0/Coded.Events.Mobile.dll
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/obj/Debug/netstandard2.0/Coded.Events.Mobile.pdb
