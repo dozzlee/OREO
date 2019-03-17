@@ -340,6 +340,19 @@
           "build/netstandard2.0/Xamarin.Forms.props": {},
           "build/netstandard2.0/Xamarin.Forms.targets": {}
         }
+      },
+      "Coded.Events.Mobile/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "Xamarin.Forms": "3.1.0.697729"
+        },
+        "compile": {
+          "bin/placeholder/Coded.Events.Mobile.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Coded.Events.Mobile.dll": {}
+        }
       }
     }
   },
@@ -747,10 +760,16 @@
         "xamarin.forms.3.1.0.697729.nupkg.sha512",
         "xamarin.forms.nuspec"
       ]
+    },
+    "Coded.Events.Mobile/1.0.0": {
+      "type": "project",
+      "path": "../Coded.Events.Mobile/Coded.Events.Mobile.csproj",
+      "msbuildProject": "../Coded.Events.Mobile/Coded.Events.Mobile.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "MonoAndroid,Version=v8.1": [
+      "Coded.Events.Mobile >= 1.0.0",
       "Xamarin.Android.Support.Design >= 27.0.2.1",
       "Xamarin.Android.Support.v4 >= 27.0.2.1",
       "Xamarin.Android.Support.v7.AppCompat >= 27.0.2.1",
@@ -766,7 +785,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile.Android/Coded.Events.Mobile.Android.csproj",
-      "projectName": "CodedTicketingApp.Android",
+      "projectName": "Coded.Events.Mobile.Android",
       "projectPath": "/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile.Android/Coded.Events.Mobile.Android.csproj",
       "packagesPath": "/Users/code/.nuget/packages/",
       "outputPath": "/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile.Android/obj/",
@@ -783,7 +802,11 @@
       },
       "frameworks": {
         "monoandroid81": {
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/Coded.Events.Mobile.csproj": {
+              "projectPath": "/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile/Coded.Events.Mobile.csproj"
+            }
+          }
         }
       }
     },

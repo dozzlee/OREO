@@ -37,5 +37,8 @@
 /Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile.Android/obj/Debug/uploadflags.txt
 /Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile.Android/obj/Debug/linksrc/Coded.Events.Mobile.Android.pdb
 /Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile.Android/obj/Debug/linksrc/Coded.Events.Mobile.pdb
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile.Android/obj/Debug/linksrc/Mono.Android.pdb
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile.Android/obj/Debug/linksrc/Xamarin.Forms.Core.pdb
+/Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile.Android/obj/Debug/linksrc/Xamarin.Forms.Xaml.pdb
 /Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile.Android/obj/Debug/linksrc/FormsViewGroup.dll.mdb
 /Users/code/Documents/CodeProjects/CodedBundle/OREO/Coded.Events.Mobile.Android/obj/Debug/linksrc/Xamarin.Forms.Platform.Android.dll.mdb

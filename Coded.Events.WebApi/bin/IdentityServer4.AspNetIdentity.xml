@@ -1,0 +1,112 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>IdentityServer4.AspNetIdentity</name>
+    </assembly>
+    <members>
+        <member name="T:IdentityServer4.AspNetIdentity.ProfileService`1">
+            <summary>
+            IProfileService to integrate with ASP.NET Identity.
+            </summary>
+            <typeparam name="TUser">The type of the user.</typeparam>
+            <seealso cref="T:IdentityServer4.Services.IProfileService" />
+        </member>
+        <member name="F:IdentityServer4.AspNetIdentity.ProfileService`1.ClaimsFactory">
+            <summary>
+            The claims factory.
+            </summary>
+        </member>
+        <member name="F:IdentityServer4.AspNetIdentity.ProfileService`1.Logger">
+            <summary>
+            The logger
+            </summary>
+        </member>
+        <member name="F:IdentityServer4.AspNetIdentity.ProfileService`1.UserManager">
+            <summary>
+            The user manager.
+            </summary>
+        </member>
+        <member name="M:IdentityServer4.AspNetIdentity.ProfileService`1.#ctor(Microsoft.AspNetCore.Identity.UserManager{`0},Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory{`0})">
+            <summary>
+            Initializes a new instance of the <see cref="T:IdentityServer4.AspNetIdentity.ProfileService`1"/> class.
+            </summary>
+            <param name="userManager">The user manager.</param>
+            <param name="claimsFactory">The claims factory.</param>
+        </member>
+        <member name="M:IdentityServer4.AspNetIdentity.ProfileService`1.#ctor(Microsoft.AspNetCore.Identity.UserManager{`0},Microsoft.AspNetCore.Identity.IUserClaimsPrincipalFactory{`0},Microsoft.Extensions.Logging.ILogger{IdentityServer4.AspNetIdentity.ProfileService{`0}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:IdentityServer4.AspNetIdentity.ProfileService`1"/> class.
+            </summary>
+            <param name="userManager">The user manager.</param>
+            <param name="claimsFactory">The claims factory.</param>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="M:IdentityServer4.AspNetIdentity.ProfileService`1.GetProfileDataAsync(IdentityServer4.Models.ProfileDataRequestContext)">
+            <summary>
+            This method is called whenever claims about the user are requested (e.g. during token creation or via the userinfo endpoint)
+            </summary>
+            <param name="context">The context.</param>
+            <returns></returns>
+        </member>
+        <member name="M:IdentityServer4.AspNetIdentity.ProfileService`1.IsActiveAsync(IdentityServer4.Models.IsActiveContext)">
+            <summary>
+            This method gets called whenever identity server needs to determine if the user is valid or active (e.g. if the user's account has been deactivated since they logged in).
+            (e.g. during token issuance or validation).
+            </summary>
+            <param name="context">The context.</param>
+            <returns></returns>
+        </member>
+        <member name="T:IdentityServer4.AspNetIdentity.ResourceOwnerPasswordValidator`1">
+            <summary>
+            IResourceOwnerPasswordValidator that integrates with ASP.NET Identity.
+            </summary>
+            <typeparam name="TUser">The type of the user.</typeparam>
+            <seealso cref="T:IdentityServer4.Validation.IResourceOwnerPasswordValidator" />
+        </member>
+        <member name="M:IdentityServer4.AspNetIdentity.ResourceOwnerPasswordValidator`1.#ctor(Microsoft.AspNetCore.Identity.UserManager{`0},Microsoft.AspNetCore.Identity.SignInManager{`0},IdentityServer4.Services.IEventService,Microsoft.Extensions.Logging.ILogger{IdentityServer4.AspNetIdentity.ResourceOwnerPasswordValidator{`0}})">
+            <summary>
+            Initializes a new instance of the <see cref="T:IdentityServer4.AspNetIdentity.ResourceOwnerPasswordValidator`1"/> class.
+            </summary>
+            <param name="userManager">The user manager.</param>
+            <param name="signInManager">The sign in manager.</param>
+            <param name="events">The events.</param>
+            <param name="logger">The logger.</param>
+        </member>
+        <member name="M:IdentityServer4.AspNetIdentity.ResourceOwnerPasswordValidator`1.ValidateAsync(IdentityServer4.Validation.ResourceOwnerPasswordValidationContext)">
+            <summary>
+            Validates the resource owner password credential
+            </summary>
+            <param name="context">The context.</param>
+            <returns></returns>
+        </member>
+        <member name="T:IdentityServer4.AspNetIdentity.SecurityStampValidatorCallback">
+            <summary>
+            Implements callback for SecurityStampValidator's OnRefreshingPrincipal event.
+            </summary>
+        </member>
+        <member name="M:IdentityServer4.AspNetIdentity.SecurityStampValidatorCallback.UpdatePrincipal(Microsoft.AspNetCore.Identity.SecurityStampRefreshingPrincipalContext)">
+            <summary>
+            Maintains the claims captured at login time that are not being created by ASP.NET Identity.
+            This is needed to preserve claims such as idp, auth_time, amr.
+            </summary>
+            <param name="context">The context.</param>
+            <returns></returns>
+        </member>
+        <member name="T:Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions">
+            <summary>
+            Extension methods to add ASP.NET Identity support to IdentityServer.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Extensions.DependencyInjection.IdentityServerBuilderExtensions.AddAspNetIdentity``1(Microsoft.Extensions.DependencyInjection.IIdentityServerBuilder)">
+            <summary>
+            Configures IdentityServer to use the ASP.NET Identity implementations 
+            of IUserClaimsPrincipalFactory, IResourceOwnerPasswordValidator, and IProfileService.
+            Also configures some of ASP.NET Identity's options for use with IdentityServer (such as claim types to use
+            and authenticaiton cookie settings).
+            </summary>
+            <typeparam name="TUser">The type of the user.</typeparam>
+            <param name="builder">The builder.</param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
