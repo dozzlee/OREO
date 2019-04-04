@@ -5,8 +5,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{B19C892E-2628-4CA7-AD27-08D406A3B14B}</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>CodedTicketingApp.UITests</RootNamespace>
-    <AssemblyName>CodedTicketingApp.UITests</AssemblyName>
+    <RootNamespace>Coded.Events.UITests</RootNamespace>
+    <AssemblyName>Coded.Events.UITests</AssemblyName>
     <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -32,13 +32,13 @@
     <PackageReference Include="Xamarin.UITest" Version="2.2.7" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\CodedTicketingApp.iOS\CodedTicketingApp.iOS.csproj">
+    <ProjectReference Include="..\Coded.Events.Mobile.iOS\Coded.Events.Mobile.iOS.csproj">
       <Project>{02DE782A-39E8-4BF1-90A7-403724B6FBE5}</Project>
       <Name>Coded.Events.Mobile.iOS</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>
       <Private>False</Private>
     </ProjectReference>
-    <ProjectReference Include="..\CodedTicketingApp.Android\CodedTicketingApp.Android.csproj">
+    <ProjectReference Include="..\Coded.Events.Mobile.Android\Coded.Events.Mobile.Android.csproj">
       <Project>{2A47D170-2718-49BF-A27B-2856AD87A74A}</Project>
       <Name>Coded.Events.Mobile.Android</Name>
       <ReferenceOutputAssembly>False</ReferenceOutputAssembly>

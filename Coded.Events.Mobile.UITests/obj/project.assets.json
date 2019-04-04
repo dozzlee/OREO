@@ -160,7 +160,7 @@
     "version": "1.0.0",
     "restore": {
       "projectUniqueName": "/Users/ekuaawotwi/src/OREO/Coded.Events.Mobile.UITests/Coded.Events.Mobile.UITests.csproj",
-      "projectName": "CodedTicketingApp.UITests",
+      "projectName": "Coded.Events.UITests",
       "projectPath": "/Users/ekuaawotwi/src/OREO/Coded.Events.Mobile.UITests/Coded.Events.Mobile.UITests.csproj",
       "packagesPath": "/Users/ekuaawotwi/.nuget/packages/",
       "outputPath": "/Users/ekuaawotwi/src/OREO/Coded.Events.Mobile.UITests/obj/",
