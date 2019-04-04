@@ -2,9 +2,9 @@
 *~
 
 # build
-#[Oo]bj/
-#[Bb]in/
-#packages/
+[Oo]bj/
+[Bb]in/
+packages/
 #TestResults/
 
 # globs
