@@ -1,9 +1,0 @@
-/Users/ekuaawotwi/src/OREO/Coded.Events.Mobile.UITests/bin/Debug/Coded.Events.UITests.dll
-/Users/ekuaawotwi/src/OREO/Coded.Events.Mobile.UITests/bin/Debug/Coded.Events.UITests.pdb
-/Users/ekuaawotwi/src/OREO/Coded.Events.Mobile.UITests/bin/Debug/nunit.framework.dll
-/Users/ekuaawotwi/src/OREO/Coded.Events.Mobile.UITests/bin/Debug/nunit.framework.pdb
-/Users/ekuaawotwi/src/OREO/Coded.Events.Mobile.UITests/bin/Debug/Xamarin.UITest.dll
-/Users/ekuaawotwi/src/OREO/Coded.Events.Mobile.UITests/obj/Debug/Coded.Events.Mobile.UITests.csproj.CoreCompileInputs.cache
-/Users/ekuaawotwi/src/OREO/Coded.Events.Mobile.UITests/obj/Debug/Coded.Events.Mobile.UITests.csproj.CopyComplete
-/Users/ekuaawotwi/src/OREO/Coded.Events.Mobile.UITests/obj/Debug/Coded.Events.UITests.dll
-/Users/ekuaawotwi/src/OREO/Coded.Events.Mobile.UITests/obj/Debug/Coded.Events.UITests.pdb
