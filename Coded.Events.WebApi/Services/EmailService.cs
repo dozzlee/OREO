@@ -1,10 +1,11 @@
-﻿using Microsoft.AspNet.Identity;
-using SendGrid;
+using Microsoft.AspNet.Identity;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
 using System.Linq;
 using System.Net;
+using System.Net.Mail;
+using System.Net.Mime;
 using System.Threading.Tasks;
 using System.Web;
 
@@ -14,36 +15,34 @@ namespace Coded.Events.WebApi.Services
     {
         public async Task SendAsync(IdentityMessage message)
         {
-            await configSendGridasync(message);
+            await ConfigSendGridasync(message);
         }
-
-        // Use NuGet to install SendGrid (Basic C# client lib) 
-        private async Task configSendGridasync(IdentityMessage message)
+        
+        // Send Email 
+        private async Task ConfigSendGridasync(IdentityMessage message)
         {
-            var myMessage = new SendGridMessage();
+             try
+              {
+                MailMessage mailMsg = new MailMessage();
+                
+                mailMsg.To.Add(message.Destination);
+                mailMsg.From = new MailAddress("codedteam5@gmail.com", "CodedTeam5");
 
-            myMessage.AddTo(message.Destination);
-            myMessage.From = new System.Net.Mail.MailAddress("daniel.quaidoo@gmail.com", "Daniel Quaidoo");
-            myMessage.Subject = message.Subject;
-            myMessage.Text = message.Body;
-            myMessage.Html = message.Body;
+                mailMsg.Subject = message.Subject;
+                string text = message.Body;
+                string html = message.Body;
+                mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(text, null, MediaTypeNames.Text.Plain));
+                mailMsg.AlternateViews.Add(AlternateView.CreateAlternateViewFromString(html, null, MediaTypeNames.Text.Html));
 
-            var credentials = new NetworkCredential(ConfigurationManager.AppSettings["emailService:Account"], 
-                                                    ConfigurationManager.AppSettings["emailService:Password"]);
+                // Init SmtpClient and send
+                SmtpClient smtpClient = new SmtpClient("smtp.sendgrid.net", Convert.ToInt32(587));
+                System.Net.NetworkCredential credentials = new NetworkCredential(ConfigurationManager.AppSettings["emailService:Account"], ConfigurationManager.AppSettings["emailService:Password"]);
+                smtpClient.Credentials = credentials;
 
-            // Create a Web transport for sending email.
-            var transportWeb = new Web(credentials);
-
-            // Send the email.
-            if (transportWeb != null)
-            {
-                await transportWeb.DeliverAsync(myMessage);
-            }
-            else
-            {
-                //Trace.TraceError("Failed to create Web transport.");
-                await Task.FromResult(0);
-            }
+                await smtpClient.SendMailAsync(mailMsg);
+              } catch (Exception ex) {
+                Console.WriteLine(ex.Message);
+              }
         }
     }
 }
